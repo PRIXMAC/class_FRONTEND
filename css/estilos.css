@@ -1,0 +1,22 @@
+.foto_personal{
+    width: 40%;
+    border-radius: 50%;
+}
+
+.barra_superior{
+    margin-top: 15px;
+}
+
+.bi{
+    font-size: 25px;
+}
+
+.contenedor_nombre{
+    padding-top: 25px;
+}
+
+.contenedor_principal{
+    margin: 10px;
+    padding: 10px;
+}
+
