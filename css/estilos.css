@@ -7,6 +7,12 @@
     margin-top: 15px;
 }
 
+.barra_superior p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .bi{
     font-size: 25px;
 }
@@ -20,3 +26,28 @@
     padding: 10px;
 }
 
+.descripcion{
+    margin: 10px;
+    padding: 10px;
+}
+
+.descripcion h5 {
+    font-weight: bold;
+}
+.text_descripcion{
+    word-break: normal;
+    overflow-wrap: break-word;
+    text-align: justify;
+}
+
+.text_exp{
+    margin: 10px;
+    padding: 10px;
+    word-break: normal;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+.text_exp h5{
+    font-weight: bold;
+}
