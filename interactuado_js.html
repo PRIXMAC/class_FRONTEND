@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactuado</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <!--<script src="./scripts/inter_js.js" async></script>-->
+        <link rel="stylesheet" href=".">
+</head>
+
+<body id="el_body"> 
+    <div class="container ">
+
+        <div class="row g-3 " style="margin-top:10px; padding:10px">
+            <div class="col" id = "titulo">
+                <p class="display-5" >Formulario de Registro</p>
+            </div>
+        </div>
+        <form class="row g-3">
+            <div class="row g-3 d-flex align-items-auto mx-auto">
+                <div class="col">
+                    <label for="nombreCompleto" class="form-label"> Nombre Completo</label>
+                    <input type="text" class="form-control" placeholder="Nombre Completo" aria-label="First name">
+                </div>
+                <div class="col">
+                    <label for="rutIdentificador" class="form-label">RUT</label>
+                    <input type="text" class="form-control" placeholder="Ej: 99.999.999-9" aria-label="Last name">
+                </div>
+                <div class="col">
+                    <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
+                    <input type="date" class="form-control" id="fechaNacimiento">
+                </div>
+            </div>
+            <div class="row g-3 d-flex align-items-auto mx-auto">
+                <div class="col ">
+                    <div class="mb-2">
+                        <label for="curriculumVitae" class="form-label mb-0"> Curriculum Vitae </label>
+                    </div>
+                    <div class="input-group ">
+                        <input type="text" class="form-control" id="form-control" placeholder="Nombre del archivo" aria-label="Nombre del archivo" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Seleccionar</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="md-4">
+                        <label for="inputState" class="form-label">Género</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Seleccione...</option>
+                            <option>Masculino</option>
+                            <option>Femenino</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="container" >
+                    <div class="row g-3 align-items-auto mx-auto" >
+                        <div class="col-md-4">
+                            <label for="inputPassword1" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="inputPassword1">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputPassword2" class="form-label">Repetir Contraseña</label>
+                            <input type="password" class="form-control" id="inputPassword2">
+                        </div>
+                    </div>                    
+            </div>
+        <div class="row">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary me-md-2" type="button">Cancelar</button>
+                <button class="btn btn-primary" type="button">Guardar</button>
+            </div>
+        </div>
+        </form>
+    </div>
+</body>
+
+</html>
