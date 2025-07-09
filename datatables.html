@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataTablesInicio</title>
+
+    <link rel="stylesheet" href="./css/estilos_users.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.datatables.net/v/dt/dt-2.3.2/datatables.min.css" rel="stylesheet"
+        integrity="sha384-d76uxpdVr9QyCSR9vVSYdOAZeRzNUN8A4JVqUHBVXyGxZ+oOfrZVHC/1Y58mhyNg" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/v/dt/dt-2.3.2/datatables.min.js"
+        integrity="sha384-JRUjeYWWUGO171YFugrU0ksSC6CaWnl4XzwP6mNjnnDh4hfFGRyYbEXwryGwLsEp"
+        crossorigin="anonymous"></script>
+    <script src="./scripts/datatables.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContenido">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" href="datatables.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="formulariousers.html">Gesti&oacute;n Usuario</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="potsusers.html">Publicaciones</a>
+            </li>
+        </ul>
+        </div>
+    </div>
+</nav>
+
+
+    
+    <div class="container DataTable">
+        <div class="row g-3 ">
+            <div class="col-12 titulo_tablas">
+                <h1>Sistemas de Gesti&oacute;n usuarios</h1>
+            </div>
+        </div>
+        
+        <div class="row my-3 d-flex align-items-auto mx-auto">
+            <div class="col-md-4">
+                <select id="tipoDatos" class="form-select">
+                    <option value="users">Usuarios</option>
+                    <option value="posts">Publicaciones</option>
+                    <option value="comments">Comentarios</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <button id="cargarDatos" class="btn btn-primary">Cargar Datos</button>
+            </div>
+        </div>
+
+        <div class="row g-3 d-flex align-items-auto mx-auto">
+            <div class="col">
+                <table id="tablaUsuarios" class="display">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Usuario</th>
+                            <th>Email</th>
+                            <th>Sitio Web</th>
+                        </tr>
+                    </thead>
+
+                    <tfoot>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Usuario</th>
+                            <th>Email</th>
+                            <th>Sitio Web</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

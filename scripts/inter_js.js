@@ -12,7 +12,6 @@ function validar_formulario(){
     var inputNombre = document.getElementById('inputNombre');
     var inputRut = document.getElementById('inputRut');
     var inputFecha = document.getElementById('inputFecha');
-    var inputFile = document.getElementById('formFile');
     var inputContrasena = document.getElementById('inputContrasena');
     var inputRepetirContrasena = document.getElementById('inputRepetirContrasena');
     var inputEmail = document.getElementById('inputEmail');

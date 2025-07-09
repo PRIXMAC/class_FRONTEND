@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormularioGesti&oacute;n</title>
+
+    <link rel="stylesheet" href="./css/estilos_users.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script src="./scripts/formulariosusers.js"></script>
+    
+</head>
+<body id="el_body">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContenido">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" href="datatables.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="formulariousers.html">Gesti&oacute;n Usuario</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="potsusers.html">Publicaciones</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container formulario">
+        <div class="col" id="Titulo">
+            <p class="display-5 " >Gesti&oacute;n usuarios</p>
+        </div>
+        <form id="FormularioUsers" class="row g-3">
+            <div class="row g-3 d-flex align-items-auto mx-auto">
+                <div class="col">
+                    <label for="inputNombre" class="form-label"> Nombre Completo</label>
+                    <input type="text" class="form-control" id="inputNombre" placeholder="Nombre" >
+                    <div id="ayudaInputNombre" class="invalid-feedback">
+                        Ingrese su nombre completo.
+                    </div>
+                </div>
+
+                <div class="col">
+                    <label for="inputUsuario" class="form-label"> Usuario</label>
+                    <input type="text" class="form-control" id="inputUsuario" placeholder="Usuario">
+                    <div id="ayudaInputUsuario" class="invalid-feedback">
+                        Ingrese su Usuario.
+                    </div>
+                </div>
+
+                <div class="col">
+                    <label for="inputFecha" class="form-label">Fecha Ingreso</label>
+                    <input type="date" class="form-control" id="inputFecha">
+                    <div id="ayudaInputFecha" class="invalid-feedback">
+                        Ingrese su fecha de Ingreso.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3 d-flex align-items-auto mx-auto">
+                <div class="col">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
+                    <div id="ayudaInputEmail" class="invalid-feedback">
+                        Ingrese su Email
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="sitioWeb" class="form-label">Sitio Web</label>
+                        <input type="url" class="form-control" id="sitioWeb" name="sitioWeb"placeholder="https://www.ejemplo.com">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-3 d-flex align-items-auto mx-auto">
+                <div class="col">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button id="cancelar" class="btn btn-primary me-md-2" type="button">Cancelar</button>
+                        <button id="boton_enviar" class="btn btn-primary" type="button">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>   
+
+
+</body>
+</html>
